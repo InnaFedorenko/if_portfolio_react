@@ -1,45 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css';
-import About from "./components/About";
-// import Contact from "./components/Contact";
-// import Navbar from "./components/Navbar";
-// import Projects from "./components/Projects";
-// import Skills from "./components/Skills";
-// import Testimonials from "./components/Testimonials";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+// Import the Navbar component and the Outlet component from 'react-router-dom'
+import Navbar from './components/Navbar';
+import Navbar_b from './components/Navbar_b';
+import Footer from './components/Footer';
+import { Outlet } from "react-router-dom";
 
+// Define the main App component
 function App() {
-
   return (
     <>
-    <About />
+      {/* Render the Navbar component */}
+      <Navbar_b />
+      {/* Create the main content area */}
+      <main className="mx-3">
+        <Outlet />
+      </main>
+      <Footer />
     </>
-
-    // <main>
-    //   <Navbar />
-    //   <About/>
-    //   <Projects />
-    //   <Skills />
-    //   <Testimonials />
-    //   <Contact />
-    //   <Footer />
-    // </main>
-
-
-//     <>
-//       <Nav />
-//       <ProjectList />
-//       <div className="card">
-//   <div className="card-body">
-//     <h5 className="card-title">Card title</h5>
-//     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-//     <a href="#" className="btn btn-primary">Go somewhere</a>
-//   </div>
-// </div>
-//     </>
-  )
+  );
 }
 
+// Export the App component to make it available for other parts of the application
 export default App;
