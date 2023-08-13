@@ -1,19 +1,20 @@
 
 const socialMedia = [
             {
-                name: 'Giithub',    
+                name: 'GitHub',    
                 url: 'https://github.com/InnaFedorenko',
-                logoFilePath: 'src/assets/images/socialmedia/github.svg',
             },
             {
                 name: 'Linkedin',
                 url: 'https://www.linkedin.com/in/inna-fedorenko/',
-                logoFilePath: 'src/assets/images/socialmedia/linkedin.svg',
-
             },
             {
                 name: 'Twitter',
                 url: 'https://twitter.com/',
-                logoFilePath: 'src/assets/images/socialmedia/twitter.svg',
-            }]
+            },
+            {
+                name: 'Email',
+                url: `mailto:ivf.fedorenko@gmail.com?subject=Let's talk!`,
+              },
+        ]
 export default socialMedia;

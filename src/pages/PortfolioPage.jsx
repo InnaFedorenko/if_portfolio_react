@@ -1,7 +1,29 @@
-export default function PortfolioPage(){
-    return (
-     <section id= "portfolio">
-        <h2 className="text-3xl font-bold text-center text-gray-800">Portfolio</h2>
-    </section>
-    )
-  }
+import React from 'react';
+import { Card } from 'react-bootstrap';
+import projects from '../data/projects'; // Import the updated projects array
+
+export default function ProjectCards() {
+  return (
+    <div className="row my-3" >
+      {projects.map((project, index) => (
+        <div key={index} className="col-md-4 mb-4">
+          <Card >
+            <Card.Img variant="top" src={project.picture} />
+            <Card.Body>
+              <Card.Link href={project.link} target="_blank">{project.name}</Card.Link>
+              <Card.Link href={project.gitLink} target="_blank">
+              <img src="src/assets/images/socialmedia/github.svg" 
+                alt="GitHub Logo" 
+                className="git-logo me-2"
+                style={{ width: '20px' }} 
+                />
+               </Card.Link> 
+              <Card.Text>Tech Stack: {project.techStack.join(', ')}</Card.Text>
+              <Card.Text>{project.description}</Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
+      ))}
+    </div>
+  );
+}

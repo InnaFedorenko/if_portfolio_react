@@ -1,7 +1,6 @@
 import './App.css';
 // Import the Navbar component and the Outlet component from 'react-router-dom'
 import Navbar from './components/Navbar';
-import Navbar_b from './components/Navbar_b';
 import Footer from './components/Footer';
 import { Outlet } from "react-router-dom";
 
@@ -10,9 +9,9 @@ function App() {
   return (
     <>
       {/* Render the Navbar component */}
-      <Navbar_b />
+      <Navbar/>
       {/* Create the main content area */}
-      <main className="mx-3">
+      <main >
         <Outlet />
       </main>
       <Footer />

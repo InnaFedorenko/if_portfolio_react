@@ -39,10 +39,10 @@ const router = createBrowserRouter([
         path: '/contact',
         element: <ContactPage />,
       },
-      {
-        path: '/resume',
-        element: <ResumePage />,
-      },
+      // {
+      //   path: '/resume',
+      //   element: <ResumePage />,
+      // },
     ],
   },
 ]);

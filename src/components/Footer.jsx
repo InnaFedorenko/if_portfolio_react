@@ -3,6 +3,8 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Logo from './Logo';
+import socialMedias from "../data/socialMedia";
 
 
 export default function Footer() {
@@ -12,7 +14,10 @@ export default function Footer() {
         <Row className="justify-content-between align-items-center">
           <Col xs={12} md={6}>
             <div className="d-flex">
-List of links
+            {socialMedias.map((item, index) => (
+                  <Logo key={index} socialMedia={item}
+                  />
+                ))}
             </div>
           </Col>
           <Col xs={12} md={6} className="text-md-end mt-3 mt-md-0">

@@ -1,29 +1,76 @@
-// src/components/Navbar.jsx
-import { Link } from 'react-router-dom';
-export default function Nav({ links }) {
+import React, { useState, useEffect } from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { NavLink } from 'react-router-dom';
+import logoImage from '../assets/images/if_logo.png';
+
+export default function Navbar_b() {
+  const [activeMenuItem, setActiveMenuItem] = useState('');
+
+  const handleActiveMenuItem = (menuItem) => {
+    setActiveMenuItem(menuItem);
+  };
+
+  useEffect(() => {
+    // Get the active menu item from storage on page load
+    const storedActiveItem = localStorage.getItem('activeMenuItem');
+    setActiveMenuItem(storedActiveItem || 'about'); // Default to 'about' if none stored
+  }, []);
+
+  useEffect(() => {
+    // Store the active menu item in local storage whenever it changes
+    localStorage.setItem('activeMenuItem', activeMenuItem);
+  }, [activeMenuItem]);
 
   return (
-    <nav className="navbar navbar-expand-lg bg-secondary">
-      <div className="container-fluid">
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            links={[
-              <Link key={1} className="nav-link text-light" to="/">
-                About Me
-              </Link>,
-              <Link key={2} className="nav-link text-light" to="/portfolio">
-                Portfolio
-              </Link>,
-              <Link key={3} className="nav-link text-light" to="/contact">
-                Contact
-              </Link>,
-              <Link key={4} className="nav-link text-light" to="/resume">
-                Resume
-              </Link>,
-            ]}
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">
+          <img
+            src={logoImage}
+            alt="Inna Fedorenko Logo"
+            height="50"
+            className="d-inline-block align-top"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <NavLink
+              exact
+              className={` ${activeMenuItem === 'about' ? 'active-link' : 'nav-link '}`}
+              to="/"
+              onClick={() => handleActiveMenuItem('about')}
+            >
+              About Me
+            </NavLink>
+            <NavLink
+              className={` ${activeMenuItem === 'portfolio' ? 'active-link' : 'nav-link '}`}
+              to="/portfolio"
+              onClick={() => handleActiveMenuItem('portfolio')}
+            >
+              Portfolio
+            </NavLink>
+            <NavLink
+              className={`${activeMenuItem === 'contact' ? 'active-link' : 'nav-link '}`}
+              to="/contact"
+              onClick={() => handleActiveMenuItem('contact')}
+            >
+              Contact
+            </NavLink>
+            <a
+              href="src/assets/cv/resume_IF_FSD.pdf"
+              target="_blank"
+              className={`${activeMenuItem === 'resume' ? 'active-link' : 'nav-link '}`}
+              download="resume_IF_FSD.pdf"
+              onClick={() => handleActiveMenuItem('resume')}
+            >
+              Resume
+            </a>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
