@@ -5,6 +5,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import imagePath from '../assets/images/photo/innafedorenko3.jpg';
 
 export default function AboutMe() {
   return (
@@ -13,7 +14,7 @@ export default function AboutMe() {
         <Row className="align-items-center">
           <Col md={6} className="p-6">
             <img
-              src="src/assets/images/photo/innafedorenko3.jpg"
+              src={imagePath}
               className="rounded-full shadow-md img-fluid"
             />
           </Col>

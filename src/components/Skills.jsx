@@ -16,9 +16,9 @@ export default function Skills() {
               currently looking for a position as a Full Stack Web Developer.
             </p>                
               <h2>Skills</h2>
-              <div className="mb-4 skills">
+              <div className="mb-4 skills ">
                 {skills.map((skill, index) => (
-                  <span key={index} className="badge  me-2">{skill}</span>
+                  <span key={index} className="badge  bg-light me-2">{skill}</span>
                 ))}
               </div>
             </div>
