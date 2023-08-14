@@ -11,7 +11,7 @@ export default function AboutMe() {
           <Col md={6} className="p-6">
             <img
             //   src="src/assets/images/photo/innafedorenko3.jpg"
-              src="https://github.com/InnaFedorenko/if_portfolio_react/blob/main/src/assets/images/photo/innafedorenko3.jpg"
+              src="if_portfolio_react/src/assets/images/photo/innafedorenko3.jpg"
               alt="Inna Fedorenko"
               className="rounded-full shadow-md img-fluid"
             />
