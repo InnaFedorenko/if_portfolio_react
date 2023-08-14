@@ -7,12 +7,12 @@ export default function ProjectCards() {
     <div className="row my-3" >
       {projects.map((project, index) => (
         <div key={index} className="col-md-4 mb-4">
-          <Card >
-            <Card.Img variant="top" src={project.picture} />
+          <Card className="card">
+            <Card.Img id= "projImg" variant="top" src={project.picture} />
             <Card.Body>
               <Card.Link href={project.link} target="_blank">{project.name}</Card.Link>
               <Card.Link href={project.gitLink} target="_blank">
-              <img src="src/assets/images/socialmedia/github.svg" 
+              <img   src="src/assets/images/socialmedia/github.svg" 
                 alt="GitHub Logo" 
                 className="git-logo me-2"
                 style={{ width: '20px' }} 
