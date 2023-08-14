@@ -1,4 +1,5 @@
 // src/components/Contact.jsx
+// purpose: Contact page for the website
 import ContactForm from "../components/ContactForm";
 export default function ContactPage(){
     return (

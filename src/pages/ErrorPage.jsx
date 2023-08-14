@@ -1,3 +1,5 @@
+// src/pages/ErrorPage.jsx
+// purpose: Error page for when a route fails to load
 import { useRouteError } from 'react-router-dom';
 
 export default function ErrorPage() {

@@ -1,4 +1,5 @@
-
+// src/data/socialMedia.js
+// this is the data for the social media links
 const socialMedia = [
             {
                 name: 'GitHub',    

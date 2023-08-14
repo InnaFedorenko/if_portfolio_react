@@ -1,3 +1,5 @@
+// src/pages/PortfolioPage.jsx
+// purpose: This file is the PortfolioPage component. It is the page that displays the projects that I have worked on.
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import projects from '../data/projects'; // Import the updated projects array

@@ -1,61 +1,59 @@
+//src/components/ContactForm.jsx
+// Purpose: Contact form component
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Form, Button, Alert } from 'react-bootstrap';
 import mycontacts from '../data/mycontacts.js';
 
 export default function ContactForm() {
+// declare state variables 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState({});
   const [isEmailValid, setIsEmailValid] = useState(true);
-
+// handle name change
   const handleNameChange = (event) => {
     setName(event.target.value);
   };
-
+// handle email change
   const handleEmailChange = (event) => {
     const newEmail = event.target.value;
     setEmail(newEmail);
     setIsEmailValid(validateEmail(newEmail));
   };
-
+// handle message change
   const handleMsgChange = (event) => {
     setMessage(event.target.value);
   };
-
+// handle submit, validate form
   const handleSubmit = (event) => {
     event.preventDefault();
     const newErrors = {};
-
     if (!name.trim()) {
       newErrors.name = 'Name is required';
     }
-
     if (!email.trim()) {
       newErrors.email = 'Email is required';
     } else if (!isEmailValid) {
       newErrors.email = 'Invalid email address';
     }
-
     if (!message.trim()) {
       newErrors.message = 'Message is required';
     }
-
     setErrors(newErrors);
-
+    // if no errors, send email
     if (Object.keys(newErrors).length === 0) {
         const mailtoLink = `mailto:'ivf.fedorenko@gmail.com'?subject=${encodeURIComponent(`Let's talk!`)} &body=${encodeURIComponent(`Hello!\nI hope this email finds you well.\n ${message}\nBest regards,\n\nName: ${name}\nEmail: ${email}`)}`;
-
         window.location.href = mailtoLink;
     }
   };
-
+// validate email
   const validateEmail = (email) => {
     const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return pattern.test(email);
   };
-
+// return contact form
   return (
     <Container className="mt-5">
       <Form className = "form" onSubmit={handleSubmit}>

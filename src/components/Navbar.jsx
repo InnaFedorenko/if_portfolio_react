@@ -1,3 +1,6 @@
+// src/components/Navbar.jsx
+// purpose: This file contains the code for the navbar component. It is used on all pages of the site.
+
 import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -6,8 +9,9 @@ import { NavLink } from 'react-router-dom';
 import logoImage from '../assets/images/if_logo.png';
 
 export default function Navbar_b() {
+  // Set the active menu item based on the current page
   const [activeMenuItem, setActiveMenuItem] = useState('');
-
+  // handleActiveMenuItem is a function that sets the active menu item
   const handleActiveMenuItem = (menuItem) => {
     setActiveMenuItem(menuItem);
   };

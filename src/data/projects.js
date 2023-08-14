@@ -1,3 +1,6 @@
+// src/data/projects.js
+// This file contains the data for the projects section. It is imported by
+// ../components/Projects.js
 const projects = [
   {
     name: 'Weather Dashboard',

@@ -1,4 +1,5 @@
-// ResumePage.jsx
+// src/pages/ResumePage.jsx
+//purpose: to display resume page
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Button } from 'react-bootstrap';

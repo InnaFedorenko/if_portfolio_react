@@ -1,4 +1,5 @@
 // src/components/Skills.jsx
+// purpose: This file contains the Skills component which is used to display the skills section of the portfolio page.
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Button } from 'react-bootstrap';

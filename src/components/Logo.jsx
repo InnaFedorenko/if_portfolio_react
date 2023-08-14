@@ -1,3 +1,5 @@
+// src/components/Logo.jsx
+// purpose: Logo component for social media icons
 import React from "react";
 import { Link } from 'react-router-dom';
 

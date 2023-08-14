@@ -1,3 +1,5 @@
+// src/App.jsx
+//purpose: The main App component for the application
 import './App.css';
 // Import the Navbar component and the Outlet component from 'react-router-dom'
 import Navbar from './components/Navbar';
@@ -8,9 +10,7 @@ import { Outlet } from "react-router-dom";
 function App() {
   return (
     <>
-      {/* Render the Navbar component */}
       <Navbar/>
-      {/* Create the main content area */}
       <main >
         <Outlet />
       </main>
@@ -19,5 +19,4 @@ function App() {
   );
 }
 
-// Export the App component to make it available for other parts of the application
 export default App;

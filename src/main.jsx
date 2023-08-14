@@ -1,6 +1,7 @@
 /**
  * src/main.jsx This file is the entry point for the application.
  */
+
 // Import required dependencies from React and other libraries
 import React from 'react';
 import ReactDOM from 'react-dom/client';
