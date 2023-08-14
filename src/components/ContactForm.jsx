@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Form, Button, Alert } from 'react-bootstrap';
+import mycontacts from '../data/mycontacts.js';
 
 export default function ContactForm() {
   const [name, setName] = useState('');
@@ -44,8 +45,9 @@ export default function ContactForm() {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      // Perform form submission here
-      console.log('Form submitted:', name, email, message);
+        const mailtoLink = `mailto:'ivf.fedorenko@gmail.com'?subject=${encodeURIComponent(`Let's talk!`)} &body=${encodeURIComponent(`Hello!\nI hope this email finds you well.\n ${message}\nBest regards,\n\nName: ${name}\nEmail: ${email}`)}`;
+
+        window.location.href = mailtoLink;
     }
   };
 
@@ -56,7 +58,7 @@ export default function ContactForm() {
 
   return (
     <Container className="mt-5">
-      <Form onSubmit={handleSubmit}>
+      <Form className = "form" onSubmit={handleSubmit}>
         <Form.Group controlId="formName">
           <Form.Label>Name</Form.Label>
           <Form.Control
@@ -94,7 +96,7 @@ export default function ContactForm() {
           <Form.Control.Feedback type="invalid">{errors.message}</Form.Control.Feedback>
         </Form.Group>
 
-        <Button variant="secondary" type="submit">
+        <Button id='submit' type="submit" className="btn btn-dark btn-lg">
           Submit
         </Button>
       </Form>

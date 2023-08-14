@@ -5,8 +5,10 @@ import projects from '../data/projects'; // Import the updated projects array
 export default function ProjectCards() {
   return (
     <div className="row my-3" >
+    <h2 className="text-center">Creative Portfolio</h2>
       {projects.map((project, index) => (
         <div key={index} className="col-md-4 mb-4">
+
           <Card className="card">
             <Card.Img id= "projImg" variant="top" src={project.picture} />
             <Card.Body>

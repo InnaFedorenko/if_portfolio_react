@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import { AiFillGithub} from 'react-icons/ai';
 
 export default function Logo ({socialMedia}) {
     return (

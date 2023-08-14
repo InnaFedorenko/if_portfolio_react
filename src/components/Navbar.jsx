@@ -43,7 +43,7 @@ export default function Navbar_b() {
               to="/"
               onClick={() => handleActiveMenuItem('about')}
             >
-              About Me
+              About
             </NavLink>
             <NavLink
               className={` ${activeMenuItem === 'portfolio' ? 'active-link' : 'nav-link '}`}
