@@ -12,6 +12,10 @@ export default defineConfig({
           src: path.resolve(__dirname, './public/img') + '/[!.]*', // 1️⃣
           dest: './', // 2️⃣
         },
+        {
+          src: path.resolve(__dirname, './public/img/logos') + '/[!.]*', // 1️⃣
+          dest: './', // 2️⃣
+        },
       ],
     }),
   ]

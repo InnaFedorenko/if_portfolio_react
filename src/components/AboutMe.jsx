@@ -5,7 +5,9 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import imagePath from '../assets/images/photo/innafedorenko3.jpg';
+import imagePath from '/public/img/innafedorenko3.jpg';
+
+
 
 export default function AboutMe() {
   return (
