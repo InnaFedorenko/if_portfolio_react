@@ -10,11 +10,11 @@ export default defineConfig({
       targets: [
         {
           src: path.resolve(__dirname, './public/img') + '/[!.]*', // 1️⃣
-          dest: './', // 2️⃣
+          dest: './img', // 2️⃣
         },
         {
           src: path.resolve(__dirname, './public/img/logos') + '/[!.]*', // 1️⃣
-          dest: './', // 2️⃣
+          dest: './img/logos', // 2️⃣
         },
       ],
     }),
