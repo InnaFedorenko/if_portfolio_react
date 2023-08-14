@@ -43,6 +43,13 @@
   font-weight: bold;
   transition: background-color 300ms;
 } 
+.badge {
+  background-color: black;
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  transition: background-color 100ms;
+}
 
 .nav-link{
   color: black;

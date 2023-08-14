@@ -58,16 +58,14 @@ export default function Navbar_b() {
               onClick={() => handleActiveMenuItem('contact')}
             >
               Contact
-            </NavLink>
-            <a
-              href="src/assets/cv/resume_IF_FSD.pdf"
-              target="_blank"
+              </NavLink>
+            <NavLink
               className={`${activeMenuItem === 'resume' ? 'active-link' : 'nav-link '}`}
-              download="resume_IF_FSD.pdf"
+              to="/resume"
               onClick={() => handleActiveMenuItem('resume')}
             >
               Resume
-            </a>
+              </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

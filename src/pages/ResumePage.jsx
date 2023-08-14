@@ -1,9 +1,19 @@
-import Skills from "../components/Skills"
-export default function ResumePage(){
-    return (
-     <section id= "portfolio">
-        <h2 className="text-3xl font-bold text-center text-gray-800">Resume</h2>
-        <Skills />
-    </section>
-    )
-  }
+// ResumePage.jsx
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Button } from 'react-bootstrap';
+import Skills from '../components/Skills';
+
+
+export default function ResumePage (){
+return (   
+  <Container className="mt-5">
+    {/* <h1>Your Resume</h1> */}
+    <Skills />
+    <a href="src/assets/cv/resume_IF_FSD.pdf" className="btn btn-dark btn-lg" download>
+        Download CV
+      </a>
+  </Container>
+)
+};
+
