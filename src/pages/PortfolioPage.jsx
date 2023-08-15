@@ -3,6 +3,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import projects from '../data/projects'; // Import the updated projects array
+import gitLogo from '/public/img/logos/github.svg';
 
 export default function ProjectCards() {
   return (
@@ -16,7 +17,7 @@ export default function ProjectCards() {
             <Card.Body>
               <Card.Link href={project.link} target="_blank">{project.name}</Card.Link>
               <Card.Link href={project.gitLink} target="_blank">
-              <img   src="src/assets/images/socialmedia/github.svg" 
+              <img   src={gitLogo}
                 alt="GitHub Logo" 
                 className="git-logo me-2"
                 style={{ width: '20px' }} 
