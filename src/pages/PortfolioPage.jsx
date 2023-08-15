@@ -10,10 +10,10 @@ export default function ProjectCards() {
     <div className="row my-3" >
     <h2 className="text-center">Creative Portfolio</h2>
       {projects.map((project, index) => (
+        
         <div key={index} className="col-md-4 mb-4">
-
           <Card className="card">
-            <Card.Img id= "projImg" variant="top" src={project.picture} />
+            <Card.Img id= "projImg" variant="top" src={project.picture}/>
             <Card.Body>
               <Card.Link href={project.link} target="_blank">{project.name}</Card.Link>
               <Card.Link href={project.gitLink} target="_blank">

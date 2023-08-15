@@ -20,6 +20,10 @@ export default defineConfig({
           src: path.resolve(__dirname, './public/cv') + '/[!.]*', // 1️⃣
           dest: './', // 2️⃣
         },
+        {
+          src: path.resolve(__dirname, './public/img/portfolio') + '/[!.]*', // 1️⃣
+          dest: './img/portfolio', // 2️⃣
+        },
       ],
     }),
   ]

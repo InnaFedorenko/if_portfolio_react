@@ -1,10 +1,18 @@
 // src/data/projects.js
 // This file contains the data for the projects section. It is imported by
 // ../components/Projects.js
+
+import weatherProj from '/public/img/portfolio/weather.jpeg';
+import proj1 from '/public/img/portfolio/Proj1.jpeg';
+import nodes from '/public/img/portfolio/Note_taker.jpeg';
+import proj2 from '/public/img/portfolio/Project2_.jpeg';
+import pwaImg from '/public/img/portfolio/pwa-1(19).jpeg';
+import proj3 from '/public/img/portfolio/proj3.jpeg';
+
 const projects = [
   {
     name: 'Weather Dashboard',
-    picture: 'src/assets/images/portfolio/weather.jpeg',
+    picture: weatherProj,
     link: 'https://innafedorenko.github.io/weather-dashboard/',
     gitLink: 'https://github.com/InnaFedorenko/weather-dashboard',
     techStack: ['HTML', 'CSS', 'JavaScript'],
@@ -12,7 +20,7 @@ const projects = [
   },
   {
     name: 'Family Fiesta',
-    picture: 'src/assets/images/portfolio/Proj1.jpeg',
+    picture: proj1,
     link: 'https://rstreep.github.io/family-event-planner/',
     gitLink: 'https://github.com/rstreep/family-event-planner',
     techStack: ['MySQL', 'NodeJS', 'JavaScript', 'HTML', 'CSS'],
@@ -20,7 +28,7 @@ const projects = [
   },
   {
     name: 'Note Taker',
-    picture: 'src/assets/images/portfolio/Note_taker.jpeg',
+    picture: nodes,
     link: 'https://note-taker-if.herokuapp.com/',
     gitLink: 'https://github.com/InnaFedorenko/note-taker',
     techStack: ['NodeJS', 'Express', 'MySQL', 'HTML', 'CSS'],
@@ -28,7 +36,7 @@ const projects = [
   },
   {
     name: 'French-Fry Family Events',
-    picture: 'src/assets/images/portfolio/Project2_.jpeg',
+    picture: proj2,
     link: 'https://french-fry-event-83fa51ccd940.herokuapp.com/',
     gitLink: 'https://github.com/rstreep/french-fry-event/tree/inna',
     techStack: ['NodeJs', 'Express', 'MySQL', 'HTML', 'Materialize CSS', 'Jest'],
@@ -36,7 +44,7 @@ const projects = [
   },
   {
     name: 'JATE Text Editor',
-    picture: 'src/assets/images/portfolio/pwa-1(19).jpeg',
+    picture: pwaImg,
     link: 'https://text-editor-pwa-if-99c3c8ed972b.herokuapp.com',
     gitLink: 'https://github.com/InnaFedorenko/text-editor-PWA-if',
     techStack: ['NodeJs', 'Express', 'PWA', 'React'],
@@ -44,7 +52,7 @@ const projects = [
   },
   {
     name: 'Project 3 - TBD',
-    picture: 'src/assets/images/portfolio/proj3.jpeg',
+    picture: proj3,
     link: 'https://www.udemy.com/course/mern-stack-front-to-back/',
     gitLink: 'https://github.com/InnaFedorenko',
     techStack: ['MERN Stack'],
