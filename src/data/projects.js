@@ -51,12 +51,12 @@ const projects = [
     description: 'Progressive Web Text Editor.',
   },
   {
-    name: 'Project 3 - TBD',
+    name: 'Education Marketplace',
     picture: proj3,
-    link: 'https://www.udemy.com/course/mern-stack-front-to-back/',
-    gitLink: 'https://github.com/InnaFedorenko',
-    techStack: ['MERN Stack'],
-    description: 'To Be developed',
+    link: 'https://education-marketplace-73fae374fc3f.herokuapp.com/',
+    gitLink: 'https://github.com/InnaFedorenko/education-market',
+    techStack: ['MERN Stack', 'React bootstrap'],
+    description: 'Decentralized education marketplace.',
   },
 ];
 
