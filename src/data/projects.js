@@ -11,28 +11,12 @@ import proj3 from '/public/img/portfolio/proj3.jpeg';
 
 const projects = [
   {
-    name: 'Weather Dashboard',
-    picture: weatherProj,
-    link: 'https://innafedorenko.github.io/weather-dashboard/',
-    gitLink: 'https://github.com/InnaFedorenko/weather-dashboard',
-    techStack: ['HTML', 'CSS', 'JavaScript'],
-    description: 'A weather forecast for the next 5 days.',
-  },
-  {
-    name: 'Family Fiesta',
-    picture: proj1,
-    link: 'https://rstreep.github.io/family-event-planner/',
-    gitLink: 'https://github.com/rstreep/family-event-planner',
-    techStack: ['MySQL', 'NodeJS', 'JavaScript', 'HTML', 'CSS'],
-    description: 'Wizard type application to plan a family event.',
-  },
-  {
-    name: 'Note Taker',
-    picture: nodes,
-    link: 'https://note-taker-if.herokuapp.com/',
-    gitLink: 'https://github.com/InnaFedorenko/note-taker',
-    techStack: ['NodeJS', 'Express', 'MySQL', 'HTML', 'CSS'],
-    description: 'A web application that can be used to write, save, and delete notes.',
+    name: 'Education Marketplace',
+    picture: proj3,
+    link: 'https://education-marketplace-73fae374fc3f.herokuapp.com/',
+    gitLink: 'https://github.com/InnaFedorenko/education-market',
+    techStack: ['MERN Stack', 'React bootstrap'],
+    description: 'Decentralized education marketplace.',
   },
   {
     name: 'French-Fry Family Events',
@@ -51,13 +35,29 @@ const projects = [
     description: 'Progressive Web Text Editor.',
   },
   {
-    name: 'Education Marketplace',
-    picture: proj3,
-    link: 'https://education-marketplace-73fae374fc3f.herokuapp.com/',
-    gitLink: 'https://github.com/InnaFedorenko/education-market',
-    techStack: ['MERN Stack', 'React bootstrap'],
-    description: 'Decentralized education marketplace.',
+    name: 'Note Taker',
+    picture: nodes,
+    link: 'https://note-taker-if.herokuapp.com/',
+    gitLink: 'https://github.com/InnaFedorenko/note-taker',
+    techStack: ['NodeJS', 'Express', 'MySQL', 'HTML', 'CSS'],
+    description: 'A web application that can be used to write, save, and delete notes.',
   },
+  {
+    name: 'Weather Dashboard',
+    picture: weatherProj,
+    link: 'https://innafedorenko.github.io/weather-dashboard/',
+    gitLink: 'https://github.com/InnaFedorenko/weather-dashboard',
+    techStack: ['HTML', 'CSS', 'JavaScript'],
+    description: 'A weather forecast for the next 5 days.',
+  },
+  {
+    name: 'Family Fiesta',
+    picture: proj1,
+    link: 'https://rstreep.github.io/family-event-planner/',
+    gitLink: 'https://github.com/rstreep/family-event-planner',
+    techStack: ['MySQL', 'NodeJS', 'JavaScript', 'HTML', 'CSS'],
+    description: 'Wizard type application to plan a family event.',
+  }
 ];
 
 export default projects;
