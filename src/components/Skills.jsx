@@ -9,13 +9,13 @@ export default function Skills() {
     <div>
       <h2>About me</h2>
       <p className="text-gray-800 mb-8">
-       `I am a highly experienced IT professional with more than 15 years in the field, including 8 years in leadership roles. I hold a Master of Computer Science degree and specialize in web development and quality assurance, staying up-to-date with the latest technology trends. My expertise covers various sectors, such as Healthcare, Financial Services, and Education. 
+      I am a highly experienced IT professional with more than 15 years in the field, including 8 years in leadership roles. I hold a Master of Computer Science degree and specialize in web development and quality assurance, staying up-to-date with the latest technology trends. My expertise covers various sectors, such as Healthcare, Financial Services, and Education. 
       </p>
       <p className="text-gray-800 mb-8">
         Throughout my career, I've excelled in managing programs and accounts, overseeing portfolios worth $10+ million. I've cultivated successful partnerships with a diverse range of clients, from major corporations to fast-growing startups. My approach is in alignment with company values, emphasizing both contractual and financial aspects.
       </p>
-      <p className="text-gray-800 mb-8">=
-        I'm a strategic thinker with a keen eye for detail, prioritizing value and always seeking innovative solutions while fostering strong interpersonal relationships. I thrive on innovation and am constantly driven by a pursuit of knowledge. I'm passionate about technology and its ability to transform the world.`
+      <p className="text-gray-800 mb-8">
+        I'm a strategic thinker with a keen eye for detail, prioritizing value and always seeking innovative solutions while fostering strong interpersonal relationships. I thrive on innovation and am constantly driven by a pursuit of knowledge. 
       </p>
       <h2>Skills</h2>
       <div className="mb-4 skills ">
