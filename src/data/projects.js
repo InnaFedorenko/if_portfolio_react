@@ -37,7 +37,7 @@ const projects = [
   {
     name: 'Note Taker',
     picture: nodes,
-    link: 'https://text-editor-pwa-if.onrender.com/',
+    link: 'https://note-taker-mapm.onrender.com',
     gitLink: 'https://github.com/InnaFedorenko/note-taker',
     techStack: ['NodeJS', 'Express', 'MySQL', 'HTML', 'CSS'],
     description: 'A web application that can be used to write, save, and delete notes.',
