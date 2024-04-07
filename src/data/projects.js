@@ -13,7 +13,7 @@ const projects = [
   {
     name: 'Education Marketplace',
     picture: proj3,
-    link: 'https://education-marketplace-73fae374fc3f.herokuapp.com/',
+    link: 'https://education-market.onrender.com',
     gitLink: 'https://github.com/InnaFedorenko/education-market',
     techStack: ['MERN Stack', 'React bootstrap'],
     description: 'Decentralized education marketplace.',
@@ -29,7 +29,7 @@ const projects = [
   {
     name: 'JATE Text Editor',
     picture: pwaImg,
-    link: 'https://text-editor-pwa-if-99c3c8ed972b.herokuapp.com',
+    link: 'https://text-editor-pwa-if.onrender.com',
     gitLink: 'https://github.com/InnaFedorenko/text-editor-PWA-if',
     techStack: ['NodeJs', 'Express', 'PWA', 'React'],
     description: 'Progressive Web Text Editor.',
@@ -37,7 +37,7 @@ const projects = [
   {
     name: 'Note Taker',
     picture: nodes,
-    link: 'https://note-taker-if.herokuapp.com/',
+    link: 'hhttps://note-taker-mapm.onrender.com',
     gitLink: 'https://github.com/InnaFedorenko/note-taker',
     techStack: ['NodeJS', 'Express', 'MySQL', 'HTML', 'CSS'],
     description: 'A web application that can be used to write, save, and delete notes.',
